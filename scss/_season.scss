@@ -1,0 +1,82 @@
+.season {
+    background-color: #000;
+    .season-catalog {
+        &__title {
+            font-family: "Playfair Display";
+            font-weight: bold;
+            font-size: 36px;
+            line-height: 48px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            &_colection {
+                margin-top: 480px;
+            }
+        }
+        &__items {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+        }
+        &__item {
+            margin: 0 25px;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+        &__img {
+            display: block;
+            padding: 50px 20px;
+            transition: all 0.3s;   
+            &:hover {
+                background-color: #191B1C;
+            }
+        }
+        &__name {
+            font-family: "Playfair Display";
+            font-size: 18px;
+            line-height: 24px;
+            color: #FFFFFF;
+            text-align: center;
+        }
+        &__price {
+            font-family: "Playfair Display";
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 21px;
+            color: #D0D0D0;
+            text-align: center;
+        }
+        &__btn {
+            font-size: 18px;
+            line-height: 23px;
+            text-align: center;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            background: none;
+            color: #fff;
+            padding: 12px 28px;
+            border: 1px solid #fff;
+            display: block;
+            margin: 50px auto 0 auto;
+
+        }
+    }
+    
+    &__row {
+        display: flex;
+    }
+    &__column:first-child {
+        flex: 0 1 55%;
+        padding-top: 90px;
+       
+    }
+    &__column:last-child {
+        flex: 0 1 45%;
+        background: url('../img/season_rightpart_bg.jpg') center center/cover no-repeat;
+        width: 880px;
+        height: 717px;
+    }
+
+}

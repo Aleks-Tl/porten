@@ -1,0 +1,55 @@
+.collection {
+    background-color: #000;
+        .collection-block {
+        &__title {
+            font-family: "Playfair Display";
+            font-weight: bold;
+            font-size: 36px;
+            line-height: 48px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            &_colection {
+                margin-top: 480px;
+            }
+        }
+        &__text {
+            width: 60%;
+            margin: 50px auto 0 auto;
+            font-size: 14px;
+            line-height: 150%;
+            text-align: center;
+            color: #FFFFFF;
+        }
+        &__btn {
+            font-size: 18px;
+            line-height: 23px;
+            text-align: center;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            background: none;
+            color: #fff;
+            padding: 12px 28px;
+            border: 1px solid #fff;
+            display: block;
+            margin: 50px auto 0 auto;
+    
+        }
+    }
+        
+    &__row {
+        display: flex;
+    }
+    &__column:last-child {
+        flex: 0 1 55%;
+        padding-top: 90px;
+           
+    }
+    &__column:first-child {
+        flex: 0 1 45%;
+        background: url('../img/collection_bg.jpg') center center/cover no-repeat;
+        width: 880px;
+        height: 600px;
+    }
+    
+}

@@ -1,0 +1,81 @@
+.footer {
+    background: url('../img/footer_bg.jpg') center center/cover no-repeat;
+    padding: 80px 0 100px 0;
+    &__row {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 1fr;
+        gap: 50px;
+    }
+    &__title {
+        font-family: 'Playfair Display';
+        font-size: 24px;
+        line-height: 32px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin-bottom: 40px;
+    }
+    &__text {
+        font-size: 14px;
+        line-height: 150%;
+        color: #FFFFFF;
+    }
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        a {
+            font-size: 14px;
+            line-height: 150%;
+            color: #D0D0D0;
+            padding: 10px 20px;
+            background-color: #0f0f0f;
+            margin: 0 20px 20px 0;
+            &:last-child {
+                margin-left: 0;
+            }            
+        }
+    }
+    &__mailing {
+        font-size: 14px;
+        line-height: 150%;
+        color: #FFFFFF;
+        margin-bottom: 35px;
+    }
+    &__form {
+        input {
+            width: 210px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.4);
+            padding-left: 20px;
+            color: #fff;
+            font-size: 15px;
+        }
+        input::placeholder {
+            color: rgba(255,255,255,0.6);
+        }
+    }
+    &__btn {
+        font-size: 14px;
+        line-height: 150%;
+        letter-spacing: 0.05em;
+        color: #FFFFFF;
+        background: none;
+        margin-left: 20px;
+    }
+}
+.copyright {
+    color: #D0D0D0;
+    background: #000;
+    padding: 15px 0;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__link {
+        color: #D0D0D0;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
